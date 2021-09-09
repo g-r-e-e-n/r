@@ -21,7 +21,7 @@ This is also the source code of the bot which is being used for playing
 
 ## Deploy to Heroku (The Easy Way)
 
-<p><a href="https://heroku.com/deploy?template=https://github.com/greenfreezer/radioplayerv2.2"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku" width="200""/></a></p>
+<p><a href="https://heroku.com/deploy?template=https://github.com/g-r-e-e-n/r"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku" width="200""/></a></p>
 NOTE: Make Sure You Have Started A Voice Chat In Your Channel/Group Before Deploying!
 
 ## Heroku Vars:
