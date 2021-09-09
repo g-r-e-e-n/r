@@ -13,8 +13,8 @@ RUN pip3 install -U pip
 COPY requirements.txt /requirements.txt
 RUN cd /
 RUN pip3 install -U -r requirements.txt
-RUN mkdir /radioplayerv2.2
-WORKDIR /radioplayerv2.2
+RUN mkdir /r
+WORKDIR /r
 COPY start.sh /start.sh
 
 #Running Radio Player Bot
