@@ -1,0 +1,77 @@
+{
+  "name": "radioplayerv2.2",
+  "description": "An Telegram Bot to Play Nonstop Radio/Music/YouTube Live in Telegram Voice Chats",
+  "logo": "https://telegra.ph/file/e1adf3925b9df1d8a6cfe.jpg",
+  "stack": "container",
+  "keywords": [
+    "telegram",
+    "radioplayer"
+  ],
+  "env": {
+    "API_ID": {
+      "description": "api_id part of your Telegram API Key from my.telegram.org/apps",
+	  "value": "4769067",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "api_hash part of your Telegram API Key from my.telegram.org/apps",
+	  "value": "2e0a06219da24207a1a2c614ba783cd0",
+      "required": true
+    },
+    "BOT_TOKEN": {
+      "description": "Bot token of Bot, get from @Botfather",
+      "required": true
+    },
+    "SESSION_STRING": {
+      "description": "Session string, use @greenstri to generate pyrogram session string",
+      "required": true
+    },
+    "CHAT": {
+      "description": "ID of Channel or Group where the Bot plays Radio/Music/YouTube Lives",
+      "required": true
+    },
+    "LOG_GROUP": {
+      "description": "ID of the group to send playlist if CHAT is a Group, if channel then leave blank",
+      "required": false
+    },
+    "ADMINS": {
+      "description": "ID of Users who can use Admin commands (for multiple users seperated by space)",
+	  "value": "1179788768",
+      "required": true
+    },
+    "ADMIN_ONLY": {
+      "description": "Change it to 'True' If you want to make /play commands only for admins of CHAT. By default /play is available for all.",
+      "value": "False",
+      "required": false
+    },
+    "MAXIMUM_DURATION": {
+      "description": "Maximum duration of song to be played using /play command",
+      "value": "15",
+      "required": false
+    },
+    "STREAM_URL": {
+      "description": "URL of Radio station or Youtube Live video url to stream with /radio command",
+      "value": "http://dione.shoutca.st:8980/stream?listening-from-radio-garden=1625316235682",
+      "required": false
+    },
+    "REPLY_MESSAGE": {
+      "description": "A reply message to those who message the USER account in PM. Make it blank if you do not need this feature.",
+      "value": "I'm only work for green👑",
+      "required": false
+    }
+  },
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    },
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
